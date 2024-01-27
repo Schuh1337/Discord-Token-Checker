@@ -15,6 +15,7 @@ Open tokenchecker.py<br>
 Done!<br>
 (Will put invalid tokens into invalid.txt)
 <br>
+<br>
 Want to get the raw tokens in a .txt file?
 
 Run extract.py<br>
