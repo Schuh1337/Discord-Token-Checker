@@ -9,7 +9,7 @@ How2Use:
 
 Have [Python 3.10](https://www.python.org/downloads/) or above installed<br>
 Download this Repo<br>
-Put Tokens in valid.txt [email:password:token format]<br>
+Put Tokens in valid.txt (email:password:token format)<br>
 Run setup.bat<br>
 Open tokenchecker.py<br>
 Done!<br>
