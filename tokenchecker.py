@@ -1,4 +1,4 @@
-import requests, time, ctypes
+import requests, os, time, ctypes
 
 GREEN = '\033[92m'
 PURPLE = '\033[95m'
@@ -38,8 +38,18 @@ def check(email, password, token):
         print(RED + f'[#] Error checking Token: {e}' + ENDC)
         return False
 
+if not os.path.exists(validPath):
+    print(RED + f'[!] File {validPath} not found.' + ENDC)
+    input()
+    exit()
+
 with open(validPath, 'r') as file:
     tokenList = file.read().splitlines()
+
+if not tokenList:
+    print(RED + f'[!] No tokens found in {validPath}.' + ENDC)
+    input()
+    exit()
 
 tokenList, dupeTokens = checkDupes(tokenList)
 totalTokens = len([token for token in tokenList if token.strip() and len(token.split(':')) == 3])
@@ -55,8 +65,7 @@ for i, token in enumerate(tokenList):
     if not token.strip() or len(token.split(':')) != 3:
         continue
     
-    components = token.split(':')
-    email, password, token = components
+    email, password, token = token.split(':')
     if check(email, password, token):
         validTokens += 1
         valid.append(f"{email}:{password}:{token}")
@@ -65,7 +74,7 @@ for i, token in enumerate(tokenList):
         invalid.append(f"{email}:{password}:{token}")
         
     processedTokens += 1
-    ctypes.windll.kernel32.SetConsoleTitleW(f'Token Checker   I   {processedTokens} of {totalTokens} checked   I   {validTokens} Valid   I   {invalidTokens} Invalid   I   {len(dupeTokens)} Duplicate{'s' if int(len(dupeTokens)) != 1 else ''}')
+    ctypes.windll.kernel32.SetConsoleTitleW(f'Token Checker   I   {processedTokens} of {totalTokens} checked   I   {validTokens} Valid   I   {invalidTokens} Invalid   I   {len(dupeTokens)} Duplicate{"s" if int(len(dupeTokens)) != 1 else ""}')
 
 with open(validPath, 'w') as validFile:
     validFile.write('\n'.join(valid))
