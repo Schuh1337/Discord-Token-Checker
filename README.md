@@ -13,7 +13,7 @@ Run setup.bat<br>
 Open tokenchecker.py<br>
 Done!<br>
 (Will put invalid tokens into invalid.txt)
-<br>
+#
 Extract:<br>
 Run extract.py<br>
 This will put every token (from valid.txt) into extracted.txt without email and password.
