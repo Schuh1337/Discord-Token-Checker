@@ -1,6 +1,4 @@
-import requests
-import time
-import ctypes
+import requests, time, ctypes
 
 GREEN = '\033[92m'
 PURPLE = '\033[95m'
