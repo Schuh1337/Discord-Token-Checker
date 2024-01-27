@@ -15,7 +15,6 @@ Put Tokens in valid.txt (email:password:token format)<br>
 Run setup.bat<br>
 Open tokenchecker.py<br>
 Done!<br>
-<br>
 #
 Want to get only the raw tokens in a .txt file?
 
