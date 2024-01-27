@@ -2,6 +2,7 @@
 
 ![Tool](https://schuh.wtf/resources/images/tokenchecker.png)
 <br>
+For Token Verification (FV, EV etc) use a different tool, this one is not made for it (although i might make one in the future)
 #
 Make sure that you have `VirtualTerminalLevel` set to `1` for the best experience. --> [Tutorial](https://www.youtube.com/watch?v=HeJOyEw3RtM)
 #
