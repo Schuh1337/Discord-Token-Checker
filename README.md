@@ -8,7 +8,7 @@ Make sure that you have `VirtualTerminalLevel` set to `1` for the best experienc
 How2Use:
 
 Have [Python 3.10](https://www.python.org/downloads/) or above installed<br>
-Download Repo<br>
+Download this Repo<br>
 Put Tokens in valid.txt [email:password:token]<br>
 Run setup.bat<br>
 Open tokenchecker.py<br>
