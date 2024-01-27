@@ -1,5 +1,8 @@
 # Discord-Token-Checker
 
+![Tool](https://schuh.wtf/resources/images/tokenchecker.png)
+<br>
+<br>
 How2Use:
 
 Download Repo<br>
