@@ -1,4 +1,1 @@
-email:password:token
-email:password:token
-email:password:token
 
