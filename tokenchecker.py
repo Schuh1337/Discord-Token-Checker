@@ -39,15 +39,16 @@ def check(email, password, token):
         return False
 
 if not os.path.exists(validPath):
-    print(RED + f'[!] File {validPath} not found.' + ENDC)
+    print(RED + f'[!] File {validPath} not found' + ENDC)
     input()
     exit()
 
 with open(validPath, 'r') as file:
-    tokenList = file.read().splitlines()
+    tokens = file.read().splitlines()
+    tokenList = [line.strip() for line in tokens if line.strip()]
 
 if not tokenList:
-    print(RED + f'[!] No tokens found in {validPath}.' + ENDC)
+    print(RED + f'[!] No tokens found in {validPath}' + ENDC)
     input()
     exit()
 
