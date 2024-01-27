@@ -1,2 +1,6 @@
 # Discord-Token-Checker
-mass check discord tokens if theyre valid or not
+How2Use:
+
+Download Repo
+Put Tokens in valid.txt [Token format: email:password:token]
+Run setup.bat
