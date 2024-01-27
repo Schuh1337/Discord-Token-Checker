@@ -16,7 +16,7 @@ Done!<br>
 (Will put invalid tokens into invalid.txt)
 <br>
 #
-Want to get the raw tokens in a .txt file?
+Want to get only the raw tokens in a .txt file?
 
 Run extract.py<br>
 This will put every token (from valid.txt) into extracted.txt without email and password.
