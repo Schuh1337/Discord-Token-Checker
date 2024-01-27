@@ -7,7 +7,7 @@ Make sure that you have `VirtualTerminalLevel` set to `1` for the best experienc
 #
 How2Use:
 
-[Have Python 3.10 or above installed](https://www.python.org/downloads/)
+[Have Python 3.10 or above installed](https://www.python.org/downloads/)<br>
 Download Repo<br>
 Put Tokens in valid.txt [email:password:token]<br>
 Run setup.bat<br>
