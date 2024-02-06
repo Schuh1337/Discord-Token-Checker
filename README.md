@@ -12,7 +12,8 @@ Have [Python 3.10](https://www.python.org/downloads/) or above installed<br>
 Download this Repo<br>
 Put Tokens in valid.txt (email:password:token format)<br>
 Run setup.bat<br>
-Open tokenchecker.py [if you have alot of tokens / want faster results, open fastertokenchecker.py ; checks 100 tokens in about 1 second, but might return false positives!]<br>
+Open tokenchecker.py<br>
+(if you have alot of tokens / want faster results, open fastertokenchecker.py ; checks 100 tokens in about 1 second, but might return false positives!)<br>
 Done!<br>
 #
 Want to get only the raw tokens in a .txt file?
