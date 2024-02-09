@@ -1,4 +1,7 @@
-import requests, os, time, ctypes
+import requests
+import os
+import time
+import ctypes
 
 GREEN = '\033[92m'
 PURPLE = '\033[95m'
@@ -72,7 +75,8 @@ for i, token in enumerate(tokenList):
         valid.append(f"{email}:{password}:{token}")
     else:
         invalidTokens += 1
-        invalid.append(f"{email}:{password}:{token}")
+        if token not in invalid:
+            invalid.append(f"{email}:{password}:{token}")
         
     processedTokens += 1
     ctypes.windll.kernel32.SetConsoleTitleW(f'Token Checker   I   {processedTokens} of {totalTokens} checked   I   {validTokens} Valid   I   {invalidTokens} Invalid   I   {len(dupeTokens)} Duplicate{"s" if int(len(dupeTokens)) != 1 else ""}')
