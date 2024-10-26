@@ -1,6 +1,6 @@
 # Discord-Token-Checker
 
-![Tool](https://schuh.wtf/resources/images/tokenchecker.png)
+![Tool](https://schuh.pages.dev/resources/images/tokenchecker.png)
 <br>
 <br>
 This tool is made for Educational Purposes and Educational Purposes ONLY.<br>
